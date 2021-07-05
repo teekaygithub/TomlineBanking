@@ -1,6 +1,10 @@
-from django.http import HttpResponse
-# from django.shortcuts import render
+from django.shortcuts import render
+from .models import Account
 
 # Create your views here.
-def index(request):
-    return HttpResponse("Your Accounts")
+def dashboard(request):
+    accounts = Account.objects.all()
+    context = {
+        "accounts": accounts
+    }
+    return render(request, "Accounts/dashboard.html", context)
