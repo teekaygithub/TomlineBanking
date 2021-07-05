@@ -5,6 +5,7 @@ from .models import Account
 def dashboard(request):
     accounts = Account.objects.all()
     context = {
-        "accounts": accounts
+        "accounts": accounts,
+        "auth": request.user.is_authenticated,
     }
     return render(request, "Accounts/dashboard.html", context)

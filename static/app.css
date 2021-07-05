@@ -1,9 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+header {
+    max-width: 80vw;
+    min-height: 8rem;
+    background-color: rgb(228, 39, 39);
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 0.25rem;
+}
+
+#logo {
+    font-size: 2rem;
+}
+
+#logo span {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    margin: 0;
 }
 
 #main-container {
-    max-width: 35vw;
+    max-width: 50vw;
     margin: 3rem auto;
     padding: 0.5rem 1rem;
 }
@@ -13,8 +48,14 @@ body {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
     background-color: rgb(190, 184, 184);
+}
+
+#account-label:active,
+#account-label:hover {
+    color: blue;
+    cursor: pointer;
 }

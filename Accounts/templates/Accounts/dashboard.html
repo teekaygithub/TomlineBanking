@@ -1,4 +1,4 @@
-{% extends 'Accounts/base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}Dashboard{% endblock title %}
 
@@ -8,7 +8,7 @@
         <h3>Your Accounts</h3>
         {% for account in accounts %}
             <div id="account-container">
-                <div>
+                <div id="account-label">
                     <p>{{ account.type }} - 1234</p>
                     <p>Quick View</p>
                 </div>
