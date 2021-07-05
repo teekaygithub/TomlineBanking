@@ -1,0 +1,20 @@
+body {
+    font-family: sans-serif;
+}
+
+#main-container {
+    max-width: 35vw;
+    margin: 3rem auto;
+    padding: 0.5rem 1rem;
+}
+
+#account-container {
+    border:1px solid;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(190, 184, 184);
+}

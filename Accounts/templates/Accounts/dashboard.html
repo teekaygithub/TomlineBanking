@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <div>
+{% extends 'Accounts/base.html' %}
+
+{% block title %}Dashboard{% endblock title %}
+
+{% block content %}
+    <div id="main-container">
         <h2>Welcome back! </h2>
         <h3>Your Accounts</h3>
         {% for account in accounts %}
-            <div>
-                <h4>{{ account.type }}</h4>
-                <p>${{ account.balance }}</p>
+            <div id="account-container">
+                <div>
+                    <p>{{ account.type }} - 1234</p>
+                    <p>Quick View</p>
+                </div>
+                <h3><strong>${{ account.balance }}</strong></h3>
             </div>
         {% endfor %}
     </div>
-</body>
-</html>
+{% endblock content %}
